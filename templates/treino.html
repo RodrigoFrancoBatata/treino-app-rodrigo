@@ -22,6 +22,14 @@
         <p><strong>Séries:</strong> {{ exercicio.series }}</p>
         <p><strong>Carga:</strong> {{ exercicio.carga }}</p>
         <p><strong>Obs:</strong> {{ exercicio.obs }}</p>
+
+        <!-- Check de exercício -->
+        <label>
+          <input type="checkbox" class="check-exercicio" data-exercicio="{{ exercicio.exercicio }}">
+          Marcar como concluído
+        </label>
+
+        <!-- Timer -->
         <button class="timer">⏱ Iniciar Descanso</button>
         <div class="contador"></div>
       </div>
