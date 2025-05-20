@@ -29,9 +29,19 @@
           Marcar como concluído
         </label>
 
-        <!-- Timer -->
-        <button class="timer">⏱ Iniciar Descanso</button>
-        <div class="contador"></div>
+        <!-- Timer com seleção -->
+        <div class="timer-box">
+          <label>
+            Tempo de descanso:
+            <select class="tempo-descanso">
+              <option value="30">30s</option>
+              <option value="45" selected>45s</option>
+              <option value="60">60s</option>
+            </select>
+          </label>
+          <button class="timer">⏱ Iniciar Descanso</button>
+          <div class="contador"></div>
+        </div>
       </div>
     {% endfor %}
   </main>

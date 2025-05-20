@@ -12,12 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Timer de descanso
+  // Timer de descanso com tempo selecionável e som
   const botoes = document.querySelectorAll(".timer");
   botoes.forEach((btn) => {
     btn.addEventListener("click", () => {
-      let tempo = 45;
+      const tempoSelect = btn.parentElement.querySelector(".tempo-descanso");
+      let tempo = parseInt(tempoSelect.value);
       const div = btn.nextElementSibling;
+      const audio = new Audio("/static/som/timer.mp3"); // coloque um mp3 com esse nome nessa pasta
+
       div.textContent = `Descanso: ${tempo}s`;
 
       const intervalo = setInterval(() => {
@@ -26,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (tempo <= 0) {
           clearInterval(intervalo);
           div.textContent = "⏱ Descanso finalizado!";
+          audio.play();
         }
       }, 1000);
     });
