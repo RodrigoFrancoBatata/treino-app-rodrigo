@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <title>Treino do Rodrigo</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+  <h1>Bem-vindo ao Treino do Rodrigo</h1>
+  <ul>
+    <li><a href="/treino/segunda-feira">Segunda-feira</a></li>
+    <li><a href="/treino/quarta-feira">Quarta-feira</a></li>
+    <li><a href="/treino/sexta-feira">Sexta-feira</a></li>
+  </ul>
+
+  <script src="/static/js/script.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/service-worker.js")
+        .then(reg => console.log("✅ Service Worker registrado"))
+        .catch(err => console.error("❌ Erro ao registrar SW:", err));
+    }
+  </script>
+</body>
+</html>

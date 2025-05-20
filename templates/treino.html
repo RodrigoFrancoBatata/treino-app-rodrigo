@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <title>Treino de {{ dia }}</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+  <header>
+    <h1>Treino de {{ dia }}</h1>
+    <button id="toggleDark">🌙/☀️</button>
+  </header>
+
+  <main>
+    {% for exercicio in exercicios %}
+      <div class="card">
+        <h2>{{ exercicio.exercicio }}</h2>
+        <img src="/static/{{ exercicio.imagem }}" alt="{{ exercicio.exercicio }}">
+        <p><strong>Séries:</strong> {{ exercicio.series }}</p>
+        <p><strong>Carga:</strong> {{ exercicio.carga }}</p>
+        <p><strong>Obs:</strong> {{ exercicio.obs }}</p>
+        <button class="timer">⏱ Iniciar Descanso</button>
+        <div class="contador"></div>
+      </div>
+    {% endfor %}
+  </main>
+
+  <script src="/static/js/script.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/service-worker.js")
+        .then(reg => console.log("✅ Service Worker registrado"))
+        .catch(err => console.error("❌ Erro ao registrar SW:", err));
+    }
+  </script>
+</body>
+</html>
