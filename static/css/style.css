@@ -1,72 +1,114 @@
 :root {
-    --bg-light: #f4f4f4;
-    --bg-dark: #111;
-    --text-light: #111;
-    --text-dark: #f4f4f4;
-    --primary: #ffd700;
-    --card-bg: #222;
-    --card-radius: 12px;
-    --timer-color: #00ff88;
-  }
-  
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 1rem;
-    background-color: var(--bg-dark);
-    color: var(--text-dark);
-    transition: all 0.3s ease;
-  }
-  
-  body.light-mode {
-    background-color: var(--bg-light);
-    color: var(--text-light);
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-  
-  h1 {
-    font-size: 1.5rem;
-  }
-  
-  .card {
-    background-color: var(--card-bg);
-    border-radius: var(--card-radius);
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 0 10px #0003;
-    transition: background-color 0.3s ease;
-  }
-  
-  body.light-mode .card {
-    background-color: white;
-  }
-  
-  .card img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: contain;
-    margin-bottom: 0.5rem;
-  }
-  
-  .timer {
-    margin-top: 1rem;
-    background-color: var(--primary);
-    border: none;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 6px;
-  }
-  
-  .contador {
-    margin-top: 0.5rem;
+  --bg-light: #f4f4f4;
+  --bg-dark: #111;
+  --text-light: #111;
+  --text-dark: #f4f4f4;
+  --primary: #ffd700;
+  --card-bg: #222;
+  --card-radius: 12px;
+  --timer-color: #00ff88;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+body.light-mode {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: var(--card-radius);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 10px #0003;
+  transition: background-color 0.3s ease;
+}
+
+body.light-mode .card {
+  background-color: white;
+}
+
+.card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.timer {
+  margin-top: 1rem;
+  background-color: var(--primary);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.contador {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--timer-color);
+}
+
+/* ========================= */
+/* NOVO: Tela inicial        */
+/* ========================= */
+
+p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.botoes-dia {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.botoes-dia a {
+  background-color: var(--primary);
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.botoes-dia a:hover {
+  background-color: #e0b800;
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+  .botoes-dia a {
+    width: 80%;
+    text-align: center;
     font-size: 1.2rem;
-    color: var(--timer-color);
   }
-  
+}
+

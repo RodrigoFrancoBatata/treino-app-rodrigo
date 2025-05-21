@@ -2,39 +2,31 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
   <title>Treino do Rodrigo</title>
   <link rel="stylesheet" href="/static/css/style.css">
-  <style>
-    .dias-container {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 30px;
-    }
-
-    .botao-dia {
-      padding: 12px 24px;
-      background-color: #ffc107;
-      color: #000;
-      border: none;
-      border-radius: 25px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .botao-dia:hover {
-      background-color: #ffb300;
-    }
-  </style>
 </head>
 <body>
-  <h1>Escolha o dia do treino:</h1>
+  <header>
+    <h1>Treino do Rodrigo</h1>
+  </header>
 
-  <div class="dias-container">
-    <button class="botao-dia" onclick="window.location.href='/treino/segunda-feira'">Segunda</button>
-    <button class="botao-dia" onclick="window.location.href='/treino/quarta-feira'">Quarta</button>
-    <button class="botao-dia" onclick="window.location.href='/treino/sexta-feira'">Sexta</button>
-  </div>
+  <main>
+    <p>Escolha o dia do treino:</p>
+    <div class="botoes-dia">
+      <a href="/treino/segunda-feira">Segunda</a>
+      <a href="/treino/quarta-feira">Quarta</a>
+      <a href="/treino/sexta-feira">Sexta</a>
+    </div>
+  </main>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/service-worker.js")
+        .then(reg => console.log("✅ SW registrado no index"))
+        .catch(err => console.error("❌ Erro ao registrar SW:", err));
+    }
+  </script>
 </body>
 </html>
