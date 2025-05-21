@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template, send_from_directory, request, jsonify
 import json
 import os
 
@@ -23,6 +23,22 @@ def manifest():
 @app.route("/service-worker.js")
 def sw():
     return send_from_directory('.', 'service-worker.js')
+
+# 🔄 Nova rota para salvar histórico
+@app.route("/salvar", methods=["POST"])
+def salvar():
+    dados = request.get_json()
+    dia = dados.get("dia")
+    feitos = dados.get("feitos")
+
+    if not dia or not feitos:
+        return jsonify({"erro": "Dados incompletos"}), 400
+
+    historico_path = f"historico_{dia.lower().replace(' ', '_')}.json"
+    with open(historico_path, "w", encoding="utf-8") as f:
+        json.dump(feitos, f, ensure_ascii=False, indent=2)
+
+    return jsonify({"mensagem": "Histórico salvo com sucesso"})
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
