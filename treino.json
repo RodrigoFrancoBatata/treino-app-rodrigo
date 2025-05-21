@@ -1,5 +1,5 @@
 {
-  "Segunda-feira": [
+  "Segunda feira": [
     {
       "exercicio": "Cadeira Extensora",
       "imagem": "imagens/cadeira_extensora.png",
@@ -50,7 +50,7 @@
       "obs": "Core firme, sem inclinar o quadril"
     }
   ],
-  "Quarta-feira": [
+  "Quarta feira": [
     {
       "exercicio": "Puxada Frontal",
       "imagem": "imagens/puxada_frontal.png",
@@ -101,7 +101,7 @@
       "obs": "Toque alternado nos ombros, sem balançar o quadril"
     }
   ],
-  "Sexta-feira": [
+  "Sexta feira": [
     {
       "exercicio": "Supino Inclinado Máquina",
       "imagem": "imagens/supino_inclinado.png",
@@ -153,4 +153,6 @@
     }
   ]
 }
+
+
 
