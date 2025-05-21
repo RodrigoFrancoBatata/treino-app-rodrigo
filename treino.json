@@ -1,92 +1,155 @@
 {
-  "Segunda feira": [
+  "Segunda-feira": [
     {
-      "exercicio": "Puxada Frente Neutra",
-      "imagem": "imagens/puxada_frontal.png",
+      "exercicio": "Cadeira Extensora",
+      "imagem": "imagens/cadeira_extensora.png",
       "series": "4x12",
-      "carga": "60%",
-      "obs": "Pegada fechada, evita sobrecarga no ombro"
+      "carga": "Moderada",
+      "obs": "Movimento completo, sem travar os joelhos"
     },
     {
-      "exercicio": "Remada Baixa Guiada",
-      "imagem": "imagens/remada_baixa.png",
+      "exercicio": "Leg Press 45°",
+      "imagem": "imagens/leg_press_45.png",
       "series": "4x10",
+      "carga": "Moderada",
+      "obs": "Pés altos e afastados para aliviar a lombar"
+    },
+    {
+      "exercicio": "Cadeira Flexora",
+      "imagem": "imagens/flexora.png",
+      "series": "3x12",
       "carga": "70%",
-      "obs": "Controle total, foco em escápulas"
+      "obs": "Foco em contração do posterior"
     },
     {
-      "exercicio": "Rosca Alternada Máquina",
-      "imagem": "imagens/rosca_maquina.png",
-      "series": "3x12",
-      "carga": "60%",
-      "obs": "Evitar compensação com o ombro"
-    },
-    {
-      "exercicio": "Prancha Abdominal",
-      "imagem": "imagens/prancha.png",
-      "series": "3x40s",
-      "carga": "Corpo",
-      "obs": "Core ativado, respiração controlada"
-    }
-  ],
-  "Quarta feira": [
-    {
-      "exercicio": "Chest Press Neutra",
-      "imagem": "imagens/chest_press.png",
-      "series": "4x10",
-      "carga": "60%",
-      "obs": "Evite abrir os cotovelos para proteger o ombro"
-    },
-    {
-      "exercicio": "Tríceps Coice na Máquina",
-      "imagem": "imagens/triceps_coice.png",
-      "series": "3x12",
-      "carga": "Leve",
-      "obs": "Movimento curto e controlado"
+      "exercicio": "Glúteo no Cross",
+      "imagem": "imagens/gluteo_cross.png",
+      "series": "3x15 por perna",
+      "carga": "Leve a moderada",
+      "obs": "Movimento controlado, contraia no topo"
     },
     {
       "exercicio": "Abdução de Quadril",
       "imagem": "imagens/abducao_quadril.png",
       "series": "3x15",
       "carga": "70%",
-      "obs": "Ativa glúteos e estabiliza o quadril"
+      "obs": "Ativa glúteo médio, estabiliza quadril"
     },
     {
-      "exercicio": "Elevação de Quadril",
-      "imagem": "imagens/elevacao_quadril.png",
-      "series": "3x15",
+      "exercicio": "Abdominal Máquina",
+      "imagem": "imagens/abdominal_maquina.png",
+      "series": "3x20",
+      "carga": "Leve",
+      "obs": "Evite empurrar com as mãos"
+    },
+    {
+      "exercicio": "Prancha Isométrica",
+      "imagem": "imagens/prancha.png",
+      "series": "3x30-40s",
       "carga": "Peso corporal",
-      "obs": "Contraia os glúteos no topo"
+      "obs": "Core firme, sem inclinar o quadril"
     }
   ],
-  "Sexta feira": [
+  "Quarta-feira": [
     {
-      "exercicio": "Cadeira Flexora",
-      "imagem": "imagens/flexora.png",
+      "exercicio": "Puxada Frontal",
+      "imagem": "imagens/puxada_frontal.png",
       "series": "4x12",
-      "carga": "70%",
-      "obs": "Fortalece posterior e protege o joelho"
-    },
-    {
-      "exercicio": "Leg Press Horizontal",
-      "imagem": "imagens/leg_press.png",
-      "series": "3x10",
       "carga": "60%",
-      "obs": "Pés altos e abertos para aliviar a lombar"
+      "obs": "Pegada aberta, foco nas dorsais"
     },
     {
-      "exercicio": "Panturrilha Sentado",
-      "imagem": "imagens/panturrilha.png",
-      "series": "4x15",
+      "exercicio": "Remada Baixa Triângulo",
+      "imagem": "imagens/remada_baixa.png",
+      "series": "4x10",
       "carga": "70%",
-      "obs": "Movimento completo e pausado no topo"
+      "obs": "Controle total, foco nas escápulas"
     },
     {
-      "exercicio": "Prancha com Peso",
-      "imagem": "imagens/prancha_peso.png",
-      "series": "3x30s",
-      "carga": "Corpo ou anilha leve",
-      "obs": "Foco em estabilidade e respiração"
+      "exercicio": "Puxada Neutra",
+      "imagem": "imagens/puxada_neutra.png",
+      "series": "3x12",
+      "carga": "Moderada",
+      "obs": "Evita sobrecarga no ombro"
+    },
+    {
+      "exercicio": "Rosca Bíceps Barra Guiada",
+      "imagem": "imagens/rosca_barra_guiada.png",
+      "series": "3x12",
+      "carga": "Moderada",
+      "obs": "Evitar balançar o corpo"
+    },
+    {
+      "exercicio": "Rosca Martelo Halteres",
+      "imagem": "imagens/rosca_martelo.png",
+      "series": "3x10 por braço",
+      "carga": "Leve a moderada",
+      "obs": "Pegada firme e neutra"
+    },
+    {
+      "exercicio": "Abdominal Oblíquo",
+      "imagem": "imagens/abdominal_obliquo.png",
+      "series": "3x20 alternado",
+      "carga": "Peso corporal",
+      "obs": "Evite torções bruscas na lombar"
+    },
+    {
+      "exercicio": "Prancha com Toques",
+      "imagem": "imagens/prancha_toques.png",
+      "series": "2x20 toques",
+      "carga": "Peso corporal",
+      "obs": "Toque alternado nos ombros, sem balançar o quadril"
+    }
+  ],
+  "Sexta-feira": [
+    {
+      "exercicio": "Supino Inclinado Máquina",
+      "imagem": "imagens/supino_inclinado.png",
+      "series": "4x10",
+      "carga": "60%",
+      "obs": "Cotovelos levemente fechados para proteger o ombro"
+    },
+    {
+      "exercicio": "Peck Deck",
+      "imagem": "imagens/peck_deck.png",
+      "series": "3x12",
+      "carga": "Leve",
+      "obs": "Movimento controlado, foco na contração do peitoral"
+    },
+    {
+      "exercicio": "Tríceps no Pulley",
+      "imagem": "imagens/triceps_pulley.png",
+      "series": "3x12",
+      "carga": "Moderada",
+      "obs": "Evite abrir os cotovelos"
+    },
+    {
+      "exercicio": "Tríceps Testa Polia",
+      "imagem": "imagens/triceps_testa.png",
+      "series": "3x10",
+      "carga": "Leve",
+      "obs": "Movimento curto e controlado"
+    },
+    {
+      "exercicio": "Elevação Lateral",
+      "imagem": "imagens/elevacao_lateral.png",
+      "series": "3x12",
+      "carga": "≤3kg",
+      "obs": "Evite elevar acima dos ombros"
+    },
+    {
+      "exercicio": "Prancha Lateral",
+      "imagem": "imagens/prancha_lateral.png",
+      "series": "2x30s por lado",
+      "carga": "Peso corporal",
+      "obs": "Quadril firme e alinhado"
+    },
+    {
+      "exercicio": "Alongamento Leve",
+      "imagem": "imagens/alongamento.png",
+      "series": "5 minutos",
+      "carga": "Leve",
+      "obs": "Respiração profunda e controle na execução"
     }
   ]
 }
